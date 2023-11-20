@@ -1,0 +1,22 @@
+{% extends 'layout.html' %} {% block css_files %}
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+/>
+{% endblock%} {% block page_title %} anasayfa {% endblock %} {%block content %}
+<body style="background-color: #f0f0f0;">
+<div class="container mt-3">
+  <div class="row">
+    <div class="col-3">
+      <!--menu-->
+      {% include 'movies/partials/_categories.html' %}
+    </div>
+    <div class="col-12">
+      <!--content-->
+      <h1 style="color: red; font-family: 'Helvetica', sans-serif; font-weight: bold;">Dizi - Film Önerisi</h1>
+      <i class="fa-solid fa-bug"></i>
+    </div>
+  </div>
+</div>
+</body>
+{% endblock %} {% block js_files %}{% endblock%}

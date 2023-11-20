@@ -1,0 +1,16 @@
+<!--UYGULAMA ANASAYFASI-->
+{% extends 'layout.html' %} {% load static %} {% block css_files %}
+<link rel="stylesheet" href="{% static 'filmler/css/style.css' %} " />
+{% endblock %} {% block page_title %} filmler {%endblock %} {%block content %}
+<div class="container mt-3">
+  <div class="row">
+    <div class="col-3">{% include 'movies/partials/_categories.html' %}</div>
+    <div class="col-9">
+      {% for movie in movies %} {% include 'movies/partials/_movie.html' %}
+      {%endfor %}
+    </div>
+  </div>
+</div>
+{% endblock %} {% block js_files %}
+<script src=" {% static 'filmler/javascript/script.js' %}"></script>
+{% endblock %}

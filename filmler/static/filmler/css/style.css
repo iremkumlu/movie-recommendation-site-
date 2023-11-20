@@ -1,0 +1,51 @@
+body {
+  background-color: #f5f5f5; /* or background-image: url('your-background-image.jpg'); */
+  color: #333; /* Text color */
+}
+
+/* Add these styles to your existing style.css or create a new one */
+
+/* Navbar Styling */
+.navbar {
+  background-color: #dc3545; /* Red background color */
+}
+
+.container {
+  color: maroon;
+  display: flex;
+  align-items: center;
+}
+
+/* Logo Styling */
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(247, 239, 239); /* White text color */
+  margin-left: 10px; /* Add some space between the logo and the icon */
+}
+
+/* Icon Styling */
+.navbar svg {
+  fill: #131316; /* White fill color for the icon */
+  margin-right: 5px; /* Add some space between the icon and the logo */
+}
+
+/* Navbar Links Styling */
+.navbar-nav {
+  margin-left: auto;
+}
+
+.nav-item {
+  margin-right: 20px; /* Add space between navigation items */
+}
+
+.nav-link {
+  color: #ffffff; /* White text color for links */
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Hover Effect for Navbar Links */
+.nav-link:hover {
+  text-decoration: underline;
+}
